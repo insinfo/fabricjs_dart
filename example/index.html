@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Fabric.js and Dart interop example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+  <script defer type="application/javascript" src="example.dart.js"></script>
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      background-color: rgb(211, 211, 211);
+      height: 100%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .wrapper {
+      background-color: rgb(255, 255, 255);
+      outline: none;
+    }
+
+    .tools {
+      color: white;
+      background-color: rgb(130, 129, 129);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="wrapper" tabindex="1000">
+        <canvas id="canvas" height="450" width="600"></canvas>
+      </div>
+      <div class="tools">
+        <button id="btnDrawToggle" type="button">Selection Mode</button>
+        <span>X:<span id="spanX"></span></span>
+        <span>Y:<span id="spanY"></span></span>
+        Example of the <a href="http://fabricjs.com/">Dart API for fabric.js</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
